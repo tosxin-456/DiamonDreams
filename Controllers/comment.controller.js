@@ -24,7 +24,6 @@ const postComment = async(req, res) => {
   //   ],
   //   max_tokens: 300
   // });
-  
   // const generatedText = response.data.choices[0].text.toLowerCase();
   if (regex.test(comment)) {
     res.status(200).json('The comment is offensive.');
