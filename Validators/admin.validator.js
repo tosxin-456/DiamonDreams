@@ -4,7 +4,11 @@ const registerAdmin = z.object({
   password:z.string()
 })
 
+const addItem = z.object({
+  itemName: z.string(),
+  itemPrice: z.string(),
+  quantity: z.string()
+})
 
 
-
-module.exports = { registerAdmin }
+module.exports = { registerAdmin , addItem}
