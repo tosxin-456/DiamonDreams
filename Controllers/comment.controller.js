@@ -11,7 +11,7 @@ const postComment = async(req, res) => {
   const comment = req.body.comment
   const blog_id = req.params.blog
   const blogComment = await blogModel.findOne({ _id: blog_id })
-  const regex = /\b(?:Fuck you|mad|foolish|liar|thief|fool|stupid|bad|don't care|werey|stupid|crazy|bitch|ass|pussy|dick|lies|swear|nigger|nigga|asshole|ass|bum bum|shut up|get out|nigger|nyash|fuck|arse|ass|Bitchass|sematic|Bonzo|waka|shege|banza)\b/i;
+  const regex = /\b(?:Fuck you|mad|foolish|liar|thief|fool|stupid|bad|don't care|werey|stupid|crazy|bitch|ass|pussy|dick|lies|swear|nigger|nigga|asshole|ass|bum bum|shut up|get out|nigger|nyash|fuck|arse|ass|Bitchass|sematic|Bonzo|waka|shege|banza|ubanka)\b/i;
 
   if (!blogComment) {
     res.status(404).json('no blog with this details exists')
